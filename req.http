@@ -1,0 +1,24 @@
+POST http://localhost:7000/api/rooms HTTP/1.1
+content-type: application/json
+
+{
+    "name": "triple ",
+    "maxOccupancy": 3
+}
+
+###
+GET http://localhost:7000/api/rooms
+
+###
+GET http://localhost:7000/api/rooms/621763c323fcdb0c5f9e1c50
+
+###
+DELETE http://localhost:7000/api/rooms/621763c323fcdb0c5f9e1c50
+
+###
+PATCH http://localhost:7000/api/rooms/621763c323fcdb0c5f9e1c50
+Content-Type: application/json
+
+{
+    "name": "triple"
+}
